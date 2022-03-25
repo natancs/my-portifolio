@@ -1,0 +1,320 @@
+$body-bg-color: #22212C;
+$bg-color: #302F3D;
+$bg-techs: #CB92B1;
+$text-color: #837E9F;
+
+$font-family: 'Merriweather Sans', sem-serifa;
+
+$box-shadow: 2px 2px 4px #1c1c22;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: $font-family;
+}
+
+body {
+  color: $text-color;
+  max-width: 1449px;
+  background-color: $body-bg-color;
+  margin: auto;
+  
+  main {
+    .box-shadow {
+      box-shadow: $box-shadow;
+      margin-bottom: 25px;
+    }
+
+    margin: 25px;
+    max-width: 1440px;
+    display: flex;
+
+    aside {
+      width: 348px;
+      margin-right: 20px;
+
+      h2 {
+        font-size: 20px;
+      }
+  
+      .card-profile,
+      .card-info,
+      .card-tecnology,
+      .card-experience,
+      .card-education {
+        background-color: $bg-color;
+        border-radius: 17px;
+        width: 100%;
+      }
+  
+      .card-profile {
+        display: flex;
+        width: 100%;
+        height: 292px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        img {
+          width: 128px;
+          height: 128px;
+          border-radius: 50%;
+          border: 1.8px solid #0f0;
+          margin-bottom: 20px;
+        }
+
+        h1 {
+          text-align: center;
+          font-size: 20px;
+          margin-bottom: 10px;
+        }
+
+        span {
+          font-size: 13px;
+        }
+      }
+
+      .card-info {
+        padding: 25px;
+        font-size: 12px;
+
+        
+
+        .card-info-item {
+          display: flex;
+          align-items: center;
+          margin-top: 15px;
+
+          &:first-child {
+            margin-top: 0;
+          }
+
+          img {
+            width: 24px;
+            height: 24px;
+            margin-right: 17px;
+          }
+        }
+      }
+
+      .card-tecnology {
+        padding: 30px 20px;
+
+        ul {
+          margin: 20px 10px 0;
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 15px;
+
+          li {
+            width: 86px;
+            height: 24px;
+            background-color: $bg-techs;
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 30px;
+
+            font-size: 10px;
+            font-weight: bold;
+            text-transform: uppercase;
+            line-height: 12.57px;
+          }
+        }
+      }
+
+      .card-experience {
+        padding: 30px 20px;
+
+        ul {
+          margin: 20px 35px 0;
+          font-size: 12px;
+
+          &:first-child {
+            margin-top: 0;
+          }
+
+          li {
+            margin-top: 10px;
+          }
+        }
+      }
+
+      .card-education {
+        padding: 30px 20px;
+
+        ul {
+          margin: 20px 35px 0;
+          font-size: 12px;
+
+          &:first-child {
+            margin-top: 0;
+          }
+
+          li {
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+  
+    section {
+      flex: 1;
+  
+      .my-projects,
+      .project-card,
+      .recent-post,
+      .posts {
+        background-color: $bg-color;
+        border-radius: 17px;  
+      }
+
+      .my-projects {
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h1 {
+          font-size: 20px;
+          font-weight: bold;
+        }
+
+        a {
+          color: $text-color;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          span {
+            margin-left: 5px;
+          }
+        }
+      }
+
+      .project {
+        display: flex;
+        gap: 25px;
+
+        .project-card {
+          padding: 30px;
+          
+          .project-header {
+            display: flex;
+            align-items: center;
+            font-size: 16px;
+            font-weight: bold;
+            img {
+              height: 16px;
+              margin-right: 5px;
+            }
+          }
+
+          .project-description {
+            margin: 20px 0;
+            font-size: 14px;
+            padding-right: 20px;
+          }
+
+          .project-footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 14px;
+
+            .stars-commit,
+            .stars,
+            .commit {
+              display: flex;
+              align-items: center;
+            }
+
+            .stars,
+            .commit {
+              img {
+                margin-right: 5px;
+                height: 20px;
+              }
+            }
+
+            .stars {
+              margin-right: 10px;
+            }
+
+            .language {
+              display: flex;
+              align-items: center;
+
+              span {
+                margin-right: 5px;
+                height: 15px;
+                width: 15px;
+                border-radius: 50%;
+                background-color: #E7DE79;
+                border: 2px solid $text-color;
+              }
+            }
+          }
+          
+        }
+      }
+
+      .recent-post {
+        font-size: 20px;
+        font-weight: bold;
+        padding: 30px;
+      }
+
+      .card-posts {
+        padding: 30px;
+        display: flex;
+
+        img {
+          width: 128px;
+          height: 128px;
+          border-radius: 50%;
+          margin-right: 25px;
+        }
+
+        .card-post-info {
+          h3 {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+          }
+          span {
+            font-size: 14px;
+          }
+          p {
+            font-size: 16px;
+            margin: 28px 0 11px;
+          }
+
+          .tags {
+
+            ul {
+              display: flex;
+              list-style: none;
+              
+              li {
+                margin-right: 10px;
+              }
+            }
+            
+          }
+        }
+      }
+
+    }
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 20px;
+  }
+}

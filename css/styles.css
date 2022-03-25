@@ -1,0 +1,251 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: "Merriweather Sans", sem-serifa;
+}
+
+body {
+  color: #837E9F;
+  max-width: 1449px;
+  background-color: #22212C;
+  margin: auto;
+}
+body main {
+  margin: 25px;
+  max-width: 1440px;
+  display: flex;
+}
+body main .box-shadow {
+  box-shadow: 2px 2px 4px #1c1c22;
+  margin-bottom: 25px;
+}
+body main aside {
+  width: 348px;
+  margin-right: 20px;
+}
+body main aside h2 {
+  font-size: 20px;
+}
+body main aside .card-profile,
+body main aside .card-info,
+body main aside .card-tecnology,
+body main aside .card-experience,
+body main aside .card-education {
+  background-color: #302F3D;
+  border-radius: 17px;
+  width: 100%;
+}
+body main aside .card-profile {
+  display: flex;
+  width: 100%;
+  height: 292px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body main aside .card-profile img {
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
+  border: 1.8px solid #0f0;
+  margin-bottom: 20px;
+}
+body main aside .card-profile h1 {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+body main aside .card-profile span {
+  font-size: 13px;
+}
+body main aside .card-info {
+  padding: 25px;
+  font-size: 12px;
+}
+body main aside .card-info .card-info-item {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+body main aside .card-info .card-info-item:first-child {
+  margin-top: 0;
+}
+body main aside .card-info .card-info-item img {
+  width: 24px;
+  height: 24px;
+  margin-right: 17px;
+}
+body main aside .card-tecnology {
+  padding: 30px 20px;
+}
+body main aside .card-tecnology ul {
+  margin: 20px 10px 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+body main aside .card-tecnology ul li {
+  width: 86px;
+  height: 24px;
+  background-color: #CB92B1;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  font-size: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 12.57px;
+}
+body main aside .card-experience {
+  padding: 30px 20px;
+}
+body main aside .card-experience ul {
+  margin: 20px 35px 0;
+  font-size: 12px;
+}
+body main aside .card-experience ul:first-child {
+  margin-top: 0;
+}
+body main aside .card-experience ul li {
+  margin-top: 10px;
+}
+body main aside .card-education {
+  padding: 30px 20px;
+}
+body main aside .card-education ul {
+  margin: 20px 35px 0;
+  font-size: 12px;
+}
+body main aside .card-education ul:first-child {
+  margin-top: 0;
+}
+body main aside .card-education ul li {
+  margin-top: 10px;
+}
+body main section {
+  flex: 1;
+}
+body main section .my-projects,
+body main section .project-card,
+body main section .recent-post,
+body main section .posts {
+  background-color: #302F3D;
+  border-radius: 17px;
+}
+body main section .my-projects {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body main section .my-projects h1 {
+  font-size: 20px;
+  font-weight: bold;
+}
+body main section .my-projects a {
+  color: #837E9F;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body main section .my-projects a span {
+  margin-left: 5px;
+}
+body main section .project {
+  display: flex;
+  gap: 25px;
+}
+body main section .project .project-card {
+  padding: 30px;
+}
+body main section .project .project-card .project-header {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+}
+body main section .project .project-card .project-header img {
+  height: 16px;
+  margin-right: 5px;
+}
+body main section .project .project-card .project-description {
+  margin: 20px 0;
+  font-size: 14px;
+  padding-right: 20px;
+}
+body main section .project .project-card .project-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+}
+body main section .project .project-card .project-footer .stars-commit,
+body main section .project .project-card .project-footer .stars,
+body main section .project .project-card .project-footer .commit {
+  display: flex;
+  align-items: center;
+}
+body main section .project .project-card .project-footer .stars img,
+body main section .project .project-card .project-footer .commit img {
+  margin-right: 5px;
+  height: 20px;
+}
+body main section .project .project-card .project-footer .stars {
+  margin-right: 10px;
+}
+body main section .project .project-card .project-footer .language {
+  display: flex;
+  align-items: center;
+}
+body main section .project .project-card .project-footer .language span {
+  margin-right: 5px;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: #E7DE79;
+  border: 2px solid #837E9F;
+}
+body main section .recent-post {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 30px;
+}
+body main section .card-posts {
+  padding: 30px;
+  display: flex;
+}
+body main section .card-posts img {
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
+  margin-right: 25px;
+}
+body main section .card-posts .card-post-info h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+body main section .card-posts .card-post-info span {
+  font-size: 14px;
+}
+body main section .card-posts .card-post-info p {
+  font-size: 16px;
+  margin: 28px 0 11px;
+}
+body main section .card-posts .card-post-info .tags ul {
+  display: flex;
+  list-style: none;
+}
+body main section .card-posts .card-post-info .tags ul li {
+  margin-right: 10px;
+}
+body footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0 20px;
+}
