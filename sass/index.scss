@@ -2,12 +2,16 @@ $body-bg-color: #22212C;
 $bg-color: #302F3D;
 $bg-techs: #CB92B1;
 $text-color: #837E9F;
+$TypeScript: #2b7489;
+$JavaScript: #f1e05a;
+$HTML: #e34c26;
+$CSS: #563d7c;
 
 $font-family: 'Merriweather Sans', sem-serifa;
 
 $box-shadow: 2px 2px 4px #1c1c22;
 
-* {
+*, button, input {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -16,10 +20,11 @@ $box-shadow: 2px 2px 4px #1c1c22;
 }
 
 body {
-  color: $text-color;
   max-width: 1449px;
   background-color: $body-bg-color;
   margin: auto;
+  color: $text-color;
+
   
   main {
     .box-shadow {
@@ -79,8 +84,11 @@ body {
       .card-info {
         padding: 25px;
         font-size: 12px;
-
         
+        a {
+          text-decoration: none;
+          color: $text-color;
+        }
 
         .card-info-item {
           display: flex;
@@ -166,10 +174,36 @@ body {
   
       .my-projects,
       .project-card,
-      .recent-post,
-      .posts {
+      .my-technologies,
+      .technologies {
         background-color: $bg-color;
         border-radius: 17px;  
+      }
+
+      .my-technologies {
+        font-size: 20px;
+        font-weight: bold;
+        padding: 25px;
+      }
+
+      .technologies {
+        padding: 30px;
+        display: flex;
+        background-color: $bg-color;
+
+        #list {
+          width: 100%;
+          list-style: none;
+          display: flex;
+          justify-content:center;
+          gap: 40px;
+          flex-wrap: wrap;
+
+          img {
+            width: 40px;
+            border-radius: 20px;
+          }
+        }
       }
 
       .my-projects {
@@ -195,12 +229,24 @@ body {
         }
       }
 
-      .project {
-        display: flex;
-        gap: 25px;
-
+      #project {
+        width: 100%;
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0 25px;
+        
         .project-card {
+          cursor: pointer;
+          border: 0;
+          width: 100%;
           padding: 30px;
+          color: $text-color;
+          margin: 0 25px 25px 0;
+
+          &:hover {
+            transform: scale(1.05, 1.05);
+          }
           
           .project-header {
             display: flex;
@@ -217,6 +263,7 @@ body {
             margin: 20px 0;
             font-size: 14px;
             padding-right: 20px;
+            text-align: left;
           }
 
           .project-footer {
@@ -253,8 +300,25 @@ body {
                 height: 15px;
                 width: 15px;
                 border-radius: 50%;
-                background-color: #E7DE79;
                 border: 2px solid $text-color;
+
+                
+              }
+
+              .TypeScript {
+                background-color: $TypeScript;
+              }
+
+              .JavaScript {
+                background-color: $JavaScript;
+              }
+
+              .HTML {
+                background-color: $HTML;
+              }
+
+              .CSS {
+                background-color: $CSS;      
               }
             }
           }
@@ -262,51 +326,7 @@ body {
         }
       }
 
-      .recent-post {
-        font-size: 20px;
-        font-weight: bold;
-        padding: 30px;
-      }
-
-      .card-posts {
-        padding: 30px;
-        display: flex;
-
-        img {
-          width: 128px;
-          height: 128px;
-          border-radius: 50%;
-          margin-right: 25px;
-        }
-
-        .card-post-info {
-          h3 {
-            font-size: 18px;
-            font-weight: bold;
-            margin-bottom: 10px;
-          }
-          span {
-            font-size: 14px;
-          }
-          p {
-            font-size: 16px;
-            margin: 28px 0 11px;
-          }
-
-          .tags {
-
-            ul {
-              display: flex;
-              list-style: none;
-              
-              li {
-                margin-right: 10px;
-              }
-            }
-            
-          }
-        }
-      }
+      
 
     }
   }

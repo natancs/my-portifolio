@@ -1,4 +1,4 @@
-* {
+*, button, input {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -7,10 +7,10 @@
 }
 
 body {
-  color: #837E9F;
   max-width: 1449px;
   background-color: #22212C;
   margin: auto;
+  color: #837E9F;
 }
 body main {
   margin: 25px;
@@ -63,6 +63,10 @@ body main aside .card-profile span {
 body main aside .card-info {
   padding: 25px;
   font-size: 12px;
+}
+body main aside .card-info a {
+  text-decoration: none;
+  color: #837E9F;
 }
 body main aside .card-info .card-info-item {
   display: flex;
@@ -131,10 +135,32 @@ body main section {
 }
 body main section .my-projects,
 body main section .project-card,
-body main section .recent-post,
-body main section .posts {
+body main section .my-technologies,
+body main section .technologies {
   background-color: #302F3D;
   border-radius: 17px;
+}
+body main section .my-technologies {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 25px;
+}
+body main section .technologies {
+  padding: 30px;
+  display: flex;
+  background-color: #302F3D;
+}
+body main section .technologies #list {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+body main section .technologies #list img {
+  width: 40px;
+  border-radius: 20px;
 }
 body main section .my-projects {
   padding: 20px;
@@ -155,93 +181,82 @@ body main section .my-projects a {
 body main section .my-projects a span {
   margin-left: 5px;
 }
-body main section .project {
-  display: flex;
-  gap: 25px;
+body main section #project {
+  width: 100%;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0 25px;
 }
-body main section .project .project-card {
+body main section #project .project-card {
+  cursor: pointer;
+  border: 0;
+  width: 100%;
   padding: 30px;
+  color: #837E9F;
+  margin: 0 25px 25px 0;
 }
-body main section .project .project-card .project-header {
+body main section #project .project-card:hover {
+  transform: scale(1.05, 1.05);
+}
+body main section #project .project-card .project-header {
   display: flex;
   align-items: center;
   font-size: 16px;
   font-weight: bold;
 }
-body main section .project .project-card .project-header img {
+body main section #project .project-card .project-header img {
   height: 16px;
   margin-right: 5px;
 }
-body main section .project .project-card .project-description {
+body main section #project .project-card .project-description {
   margin: 20px 0;
   font-size: 14px;
   padding-right: 20px;
+  text-align: left;
 }
-body main section .project .project-card .project-footer {
+body main section #project .project-card .project-footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
   font-size: 14px;
 }
-body main section .project .project-card .project-footer .stars-commit,
-body main section .project .project-card .project-footer .stars,
-body main section .project .project-card .project-footer .commit {
+body main section #project .project-card .project-footer .stars-commit,
+body main section #project .project-card .project-footer .stars,
+body main section #project .project-card .project-footer .commit {
   display: flex;
   align-items: center;
 }
-body main section .project .project-card .project-footer .stars img,
-body main section .project .project-card .project-footer .commit img {
+body main section #project .project-card .project-footer .stars img,
+body main section #project .project-card .project-footer .commit img {
   margin-right: 5px;
   height: 20px;
 }
-body main section .project .project-card .project-footer .stars {
+body main section #project .project-card .project-footer .stars {
   margin-right: 10px;
 }
-body main section .project .project-card .project-footer .language {
+body main section #project .project-card .project-footer .language {
   display: flex;
   align-items: center;
 }
-body main section .project .project-card .project-footer .language span {
+body main section #project .project-card .project-footer .language span {
   margin-right: 5px;
   height: 15px;
   width: 15px;
   border-radius: 50%;
-  background-color: #E7DE79;
   border: 2px solid #837E9F;
 }
-body main section .recent-post {
-  font-size: 20px;
-  font-weight: bold;
-  padding: 30px;
+body main section #project .project-card .project-footer .language .TypeScript {
+  background-color: #2b7489;
 }
-body main section .card-posts {
-  padding: 30px;
-  display: flex;
+body main section #project .project-card .project-footer .language .JavaScript {
+  background-color: #f1e05a;
 }
-body main section .card-posts img {
-  width: 128px;
-  height: 128px;
-  border-radius: 50%;
-  margin-right: 25px;
+body main section #project .project-card .project-footer .language .HTML {
+  background-color: #e34c26;
 }
-body main section .card-posts .card-post-info h3 {
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-body main section .card-posts .card-post-info span {
-  font-size: 14px;
-}
-body main section .card-posts .card-post-info p {
-  font-size: 16px;
-  margin: 28px 0 11px;
-}
-body main section .card-posts .card-post-info .tags ul {
-  display: flex;
-  list-style: none;
-}
-body main section .card-posts .card-post-info .tags ul li {
-  margin-right: 10px;
+body main section #project .project-card .project-footer .language .CSS {
+  background-color: #563d7c;
 }
 body footer {
   display: flex;
