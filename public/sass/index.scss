@@ -6,6 +6,7 @@ $TypeScript: #2b7489;
 $JavaScript: #f1e05a;
 $HTML: #e34c26;
 $CSS: #563d7c;
+$SCSS: #c6538c;
 
 $font-family: 'Merriweather Sans', sem-serifa;
 
@@ -316,6 +317,10 @@ body {
 
               .CSS {
                 background-color: $CSS;      
+              }
+
+              .SCSS {
+                background-color: $SCSS;      
               }
             }
           }

@@ -255,6 +255,9 @@ body main section #project .project-card .project-footer .language .HTML {
 body main section #project .project-card .project-footer .language .CSS {
   background-color: #563d7c;
 }
+body main section #project .project-card .project-footer .language .SCSS {
+  background-color: #c6538c;
+}
 body footer {
   display: flex;
   justify-content: center;
