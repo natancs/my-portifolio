@@ -1,8 +1,15 @@
 {
   "name": "portfolio",
+  "root": "public",
   "version": "1.0.0",
-  "main": "index.js",
   "author": "Natan <natan.carvalho123@hotmail.com>",
   "license": "MIT",
-  "type": "module"
+  "type": "module",
+  "clean_urls": true,
+  "https_only": true,
+  "headers": {
+    "/**": {
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
 }
