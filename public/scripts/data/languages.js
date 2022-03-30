@@ -17,7 +17,7 @@ const iconsLanguage = [
 function listItems(element) {
   const newItem = document.createElement("li");
   newItem.innerHTML = `
-    <img src="${element.icon}" width="40" alt="${element.name}" />
+    <img src="${element.icon}" width="40" height="auto" alt="${element.name}" />
   `
   document.querySelector("#list").appendChild(newItem);
 }
