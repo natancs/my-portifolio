@@ -1,6 +1,6 @@
 {
   "name": "portfolio",
-  "root": "public",
+  "main": "index.js",
   "version": "1.0.0",
   "author": "Natan <natan.carvalho123@hotmail.com>",
   "license": "MIT",
@@ -11,5 +11,8 @@
     "/**": {
       "Access-Control-Allow-Origin": "*"
     }
+  },
+  "engines": {
+    "node": "16.13.2"
   }
 }

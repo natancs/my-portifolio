@@ -46,8 +46,6 @@ body main aside .card-profile {
   justify-content: center;
 }
 body main aside .card-profile img {
-  width: 128px;
-  height: 128px;
   border-radius: 50%;
   border: 1.8px solid #0f0;
   margin-bottom: 20px;
@@ -159,7 +157,6 @@ body main section .technologies #list {
   flex-wrap: wrap;
 }
 body main section .technologies #list img {
-  width: 40px;
   border-radius: 20px;
 }
 body main section .my-projects {
