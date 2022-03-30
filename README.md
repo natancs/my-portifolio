@@ -40,5 +40,6 @@ pure where the GitHub api was consumed
 It was proposed to have buttons, I created the buttons forwarding them to the project repository on GitHub
 
 
+Made with 💜 by Natanael de Carvalho: 👉 [See my Linkedin](https://www.linkedin.com/in/natanael-de-carvalho/)
 
 Version: 1.0

@@ -326,12 +326,42 @@ body {
           }
           
         }
+
+        
       }
-
-      
-
     }
   }
+
+  @media screen and (max-width: 768px) {
+    main {
+      max-width: 755px;
+      margin: auto;
+      padding: 20px;
+
+      section {
+        #project {
+          grid-template-columns: 1fr;
+        }
+      }
+      
+    }
+    
+  }
+
+  @media screen and (max-width: 425px) {
+    main {
+      width: 100%;
+      max-width: 425px;
+      margin: auto;
+      display: grid; 
+      
+      aside {
+        margin: auto;
+      }
+    }
+    
+  }
+
 
   footer {
     display: flex;
