@@ -41,6 +41,6 @@ It was proposed to have buttons, I created the buttons forwarding them to the pr
 
 Already published in Versel [my-portifolio](https://my-portifolio-tau.vercel.app/)
 
-Made with 💜 by Natanael de Carvalho: 👉 [See my Linkedin](https://www.linkedin.com/in/natanael-de-carvalho/)
+Made with 💜 by Natanael de Carvalho: 👉 <a href="https://www.linkedin.com/in/natanael-de-carvalho/" target="_blank">See my Linkedin</a>
 
 Version: 1.0
