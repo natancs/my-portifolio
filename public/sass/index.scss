@@ -8,11 +8,14 @@ $HTML: #e34c26;
 $CSS: #563d7c;
 $SCSS: #c6538c;
 
-$font-family: 'Merriweather Sans', sem-serifa;
+$font-family: 'Merriweather Sans',
+sem-serifa;
 
 $box-shadow: 2px 2px 4px #1c1c22;
 
-*, button, input {
+*,
+button,
+input {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -26,25 +29,31 @@ body {
   margin: auto;
   color: $text-color;
 
-  
+
   main {
     .box-shadow {
       box-shadow: $box-shadow;
       margin-bottom: 25px;
     }
 
-    margin: 25px;
+    margin: auto;
+    padding: 20px;
     max-width: 1440px;
     display: flex;
+    gap: 20px;
 
     aside {
-      width: 348px;
-      margin-right: 20px;
+      max-width: 348px;
+      width: 100%;
 
       h2 {
         font-size: 20px;
       }
-  
+
+      .view {
+        display: none;
+      }
+
       .card-profile,
       .card-info,
       .card-tecnology,
@@ -54,11 +63,11 @@ body {
         border-radius: 17px;
         width: 100%;
       }
-  
+
       .card-profile {
         display: flex;
         width: 100%;
-        height: 292px;
+        padding: 30px 0;
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -83,7 +92,7 @@ body {
       .card-info {
         padding: 25px;
         font-size: 12px;
-        
+
         a {
           text-decoration: none;
           color: $text-color;
@@ -167,16 +176,16 @@ body {
         }
       }
     }
-  
+
     section {
-      flex: 1;
-  
+      width: 100%;
+
       .my-projects,
       .project-card,
       .my-technologies,
       .technologies {
         background-color: $bg-color;
-        border-radius: 17px;  
+        border-radius: 17px;
       }
 
       .my-technologies {
@@ -194,7 +203,7 @@ body {
           width: 100%;
           list-style: none;
           display: flex;
-          justify-content:center;
+          justify-content: center;
           gap: 40px;
           flex-wrap: wrap;
 
@@ -233,7 +242,7 @@ body {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 0 25px;
-        
+
         .project-card {
           cursor: pointer;
           border: 0;
@@ -245,12 +254,13 @@ body {
           &:hover {
             transform: scale(1.05, 1.05);
           }
-          
+
           .project-header {
             display: flex;
             align-items: center;
             font-size: 16px;
             font-weight: bold;
+
             img {
               height: 16px;
               margin-right: 5px;
@@ -300,7 +310,7 @@ body {
                 border-radius: 50%;
                 border: 2px solid $text-color;
 
-                
+
               }
 
               .TypeScript {
@@ -316,50 +326,99 @@ body {
               }
 
               .CSS {
-                background-color: $CSS;      
+                background-color: $CSS;
               }
 
               .SCSS {
-                background-color: $SCSS;      
+                background-color: $SCSS;
               }
             }
           }
-          
+
         }
 
-        
+
       }
     }
   }
 
   @media screen and (max-width: 768px) {
+
     main {
-      max-width: 755px;
-      margin: auto;
-      padding: 20px;
+      max-width: 750px;
+      margin: 0 -10px 0 10px;
+      padding: 0;
+
+      aside {
+        max-width: 290px;
+
+        .card-tecnology {
+          ul {
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            grid-template-columns: repeat(2, 1fr);
+          }
+        }
+      }
 
       section {
+        max-width: 750px;
+        margin: 0 -10px 0 10px;
+        padding: 0;
+
+        section {
+          width: 100%;
+        }
+
         #project {
           grid-template-columns: 1fr;
         }
       }
-      
+
     }
-    
+
   }
 
   @media screen and (max-width: 425px) {
     main {
-      width: 100%;
+
       max-width: 425px;
       margin: auto;
-      display: grid; 
-      
+      display: grid;
+
       aside {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         margin: auto;
+
+        .view {
+          display: block;
+          margin-top: -20px;
+          width: 30px;
+          height: 30px;
+          border-right: 4px solid $text-color;
+          border-bottom: 4px solid $text-color;
+
+          transform: rotate(45deg);
+          transition: all ease 0.3s;
+        }
+
+        // .viewDiv {
+
+        // }
+
+        .card-info,
+        .card-tecnology,
+        .card-experience,
+        .card-education {
+          display: none;
+        }
       }
     }
-    
+
   }
 
 

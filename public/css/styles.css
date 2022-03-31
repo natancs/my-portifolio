@@ -1,4 +1,6 @@
-*, button, input {
+*,
+button,
+input {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -13,20 +15,25 @@ body {
   color: #837E9F;
 }
 body main {
-  margin: 25px;
+  margin: auto;
+  padding: 20px;
   max-width: 1440px;
   display: flex;
+  gap: 20px;
 }
 body main .box-shadow {
   box-shadow: 2px 2px 4px #1c1c22;
   margin-bottom: 25px;
 }
 body main aside {
-  width: 348px;
-  margin-right: 20px;
+  max-width: 348px;
+  width: 100%;
 }
 body main aside h2 {
   font-size: 20px;
+}
+body main aside .view {
+  display: none;
 }
 body main aside .card-profile,
 body main aside .card-info,
@@ -40,7 +47,7 @@ body main aside .card-education {
 body main aside .card-profile {
   display: flex;
   width: 100%;
-  height: 292px;
+  padding: 30px 0;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -129,7 +136,7 @@ body main aside .card-education ul li {
   margin-top: 10px;
 }
 body main section {
-  flex: 1;
+  width: 100%;
 }
 body main section .my-projects,
 body main section .project-card,
@@ -260,9 +267,26 @@ body main section #project .project-card .project-footer .language .SCSS {
 }
 @media screen and (max-width: 768px) {
   body main {
-    max-width: 755px;
-    margin: auto;
-    padding: 20px;
+    max-width: 750px;
+    margin: 0 -10px 0 10px;
+    padding: 0;
+  }
+  body main aside {
+    max-width: 290px;
+  }
+  body main aside .card-tecnology ul {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  body main section {
+    max-width: 750px;
+    margin: 0 -10px 0 10px;
+    padding: 0;
+  }
+  body main section section {
+    width: 100%;
   }
   body main section #project {
     grid-template-columns: 1fr;
@@ -270,13 +294,32 @@ body main section #project .project-card .project-footer .language .SCSS {
 }
 @media screen and (max-width: 425px) {
   body main {
-    width: 100%;
     max-width: 425px;
     margin: auto;
     display: grid;
   }
   body main aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: auto;
+  }
+  body main aside .view {
+    display: block;
+    margin-top: -20px;
+    width: 30px;
+    height: 30px;
+    border-right: 4px solid #837E9F;
+    border-bottom: 4px solid #837E9F;
+    transform: rotate(45deg);
+    transition: all ease 0.3s;
+  }
+  body main aside .card-info,
+body main aside .card-tecnology,
+body main aside .card-experience,
+body main aside .card-education {
+    display: none;
   }
 }
 body footer {
