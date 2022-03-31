@@ -39,6 +39,7 @@ pure where the GitHub api was consumed
 
 It was proposed to have buttons, I created the buttons forwarding them to the project repository on GitHub
 
+Already published in Versel [my-portifolio](https://my-portifolio-tau.vercel.app/)
 
 Made with 💜 by Natanael de Carvalho: 👉 [See my Linkedin](https://www.linkedin.com/in/natanael-de-carvalho/)
 
