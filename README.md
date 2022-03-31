@@ -39,6 +39,10 @@ pure where the GitHub api was consumed
 
 It was proposed to have buttons, I created the buttons forwarding them to the project repository on GitHub
 
+## View
+
+<img src="./public/assets/project-portfolio.gif" alt="My Portfolio"/>
+
 Already published in Versel <a href="https://my-portifolio-tau.vercel.app/" target="_blank">my-portfolio</a>
 
 Made with 💜 by Natanael de Carvalho: 👉 <a href="https://www.linkedin.com/in/natanael-de-carvalho/" target="_blank">See my Linkedin</a>
